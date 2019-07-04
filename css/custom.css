@@ -1,0 +1,47 @@
+.uk-navbar-nav > li > a {
+    color: white !important;
+}
+
+html, body {
+    background-color: #111;
+    min-height:100%;
+}
+
+.uk-button-prim {
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+}
+
+.uk-button-prim:hover {
+    background-color: #472639;
+    color: white;
+}
+
+.bg {
+    background: url('../img/6.png');
+}
+
+.uk-heading {
+    color: white;
+}
+
+#js-scroll-trigger {
+    color: white;
+}
+
+@media only screen and (max-width: 1199px) {
+    .bg {
+        background-position: center;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .main {
+        background-color: rgba(0,0,0,0.7);
+        color: white;
+    }
+
+    .uk-button-prim {
+        border: 1px solid #472639;
+    }
+}
