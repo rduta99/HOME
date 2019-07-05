@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Template</title>
+    <link rel="stylesheet" href="./css/uikit.min.css">
+    <link rel="stylesheet" href="./css/custom-1.css">
+</head>
+<body>
+    <nav class="uk-navbar-container uk-visible@s uk-light uk-navbar-transparent" style="background-color:rgba(0,0,0,0.7)" uk-navbar uk-sticky>
+        <div class="uk-navbar-center">
+            <div class="uk-navbar-center-left"><div>
+                <ul class="uk-navbar-nav">
+                    <li><a class="uk-button-text" href="#">Beranda</a></li>
+                    <li>
+                        <a class="uk-button-text" href="#">Kompetisi</a>
+                        <div class="uk-navbar-dropdown uk-light" style="background-color: #111">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">Competitive Programing</a></li>
+                                <li><a href="#">Bussiness IT Case</a></li>
+                                <li><a href="#">Network Competition</a></li>
+                                <li><a href="#">UI UX Design</a></li>
+                                <li><a href="#">Software Development</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div></div>
+            <a class="uk-navbar-item uk-logo" href="#">
+                <img src="./img/logo.png" style="height:50px;" alt="" srcset="">
+            </a>
+            <div class="uk-navbar-center-right">
+                <div>
+                    <ul class="uk-navbar-nav">
+                        <li><a class="uk-button-text" href="">Sejarah</a></li>
+                        <li><a class="uk-button-text" href="">Daftar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="uk-navbar-container uk-hidden@s" style="background-color: rgba(0,0,0,0.7)" uk-navbar uk-sticky>
+        <div class="uk-navbar-left">
+            <img src="./img/logo.png" class="uk-margin-small-left" style="height:50px;" alt="" srcset="">
+        </div>
+        <div class="uk-navbar-right">
+            <a class="uk-navbar-toggle" style="color: white" uk-toggle="target: #offcanvas-slide">
+                <span uk-navbar-toggle-icon></span>
+            </a>
+        </div>
+    </nav>
+
+    <div id="offcanvas-slide" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar" style="background-color: #000">
+            <div class="uk-padding">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <li class="uk-nav-header">Menu Utama</li>
+                <li><a href="<?= site_url('main') ?>"><span class="uk-margin-small-right" uk-icon="icon: home"></span> Beranda</a></li>
+                <!-- <li>
+                    <a><span class="uk-margin-small-right" uk-icon="icon: file-text"></span> Kompetisi</a>
+                </li> -->
+                <li class="uk-parent">
+                    <a href="#"><span class="uk-margin-small-right" uk-icon="icon: file-text"></span> Kompetisi</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="<?= site_url('main/competitive-programing') ?>">Competitive Programing</a></li>
+                        <li><a href="<?= site_url('main/business-it-case') ?>">Business IT Case</a></li>
+                        <li><a href="<?= site_url('main/ui-ux-design') ?>">UI/UX Design</a></li>
+                        <li><a href="<?= site_url('main/software-development') ?>">Software Development</a></li>
+                        <li><a href="<?= site_url('main/network-competition') ?>">Network Competition</a></li>
+                    </ul>
+                </li>
+                <li><a href=""><span class="uk-margin-small-right" uk-icon="icon: question"></span> Tentang Techphoria</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="<?= site_url('logout') ?>"><span class="uk-margin-small-right" uk-icon="icon: sign-out"></span> Daftar</a></li>
+                <li><a href="<?= site_url('logout') ?>"><span class="uk-margin-small-right" uk-icon="icon: sign-in"></span> Masuk</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="uk-container uk-margin-top">
+        <h3 class="uk-heading uk-margin-top uk-text-center uk-text-bold uk-text-uppercase">
+            History of Technology Euphoria
+        </h3>
+        <div class="uk-card top uk-animation-fade">
+            <div class="uk-card-body uk-light">
+                <p class="uk-width-1-2@m uk-text-justify">
+                    Techphoria merupakan serangkaian acara IT tahunan dengan fokus utama kompetisi yang diperuntukan bagi Universitas/Politeknik se-Indonesia untuk meningkatkan kesadaran tentang peranan IT serta meningkatkan nilai keilmuan dan komprehensif di bidang ilmu teknologi informasi komputer, ajang ini sendiri diprakarsai oleh Mahasiswa Fakultas Ilmu Komputer Universitas Sriwijaya.
+                </p>
+            </div>
+        </div>
+        <div class="uk-grid uk-margin-top" uk-grid>
+            <div class="uk-width-1-2 uk-width-1-5@m">
+                <div class="uk-card main uk-animation-slide-left-medium">
+                    <div class="uk-media-top">
+                        <img src="./img/14.png" alt="">
+                    </div>
+                    <div class="">
+                        <a href="" class="uk-button uk-button-prim uk-width-expand@m">detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-2 uk-width-1-5@m">
+                <div class="uk-card main uk-animation-slide-bottom-medium">
+                    <div class="uk-media-top">
+                        <img src="./img/15.png" alt="">
+                    </div>
+                    <div class="">
+                        <a href="" class="uk-button uk-button-prim uk-width-expand@m">detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-2 uk-width-1-5@m">
+                <div class="uk-card main uk-animation-fade">
+                    <div class="uk-media-top">
+                        <img src="./img/16.png" alt="">
+                    </div>
+                    <div class="">
+                        <a href="" class="uk-button uk-button-prim uk-width-expand@m">detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-2 uk-width-1-5@m">
+                <div class="uk-card main uk-animation-slide-top-medium">
+                    <div class="uk-media-top">
+                        <img src="./img/17.png" alt="">
+                    </div>
+                    <div class="">
+                        <a href="" class="uk-button uk-button-prim uk-width-expand@m">detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-2 uk-width-1-5@m">
+                <div class="uk-card main uk-animation-slide-right-medium">
+                    <div class="uk-media-top">
+                        <img src="./img/18.png" class="uk-padding-small" alt="">
+                    </div>
+                    <div class="">
+                        <a href="" class="uk-button uk-button-prim uk-width-expand@m">detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="uk-margin-large-top uk-background-secondary">
+        <div class="uk-container">
+            <div class="uk-grid uk-light uk-margin-top uk-margin-bottom" uk-grid>
+                <div class="uk-width-1-3@s uk-text-center uk-text-left@s">
+                    <h5>
+                        Techphoria 2019
+                    </h5>
+                    <a href="" class="uk-button foot uk-button-text">Competitive Programing</a> |
+                    <a href="" class="uk-button foot uk-button-text">Bussiness IT Case</a> |
+                    <a href="" class="uk-button foot uk-button-text">UI / UX Design</a> |
+                    <a href="" class="uk-button foot uk-button-text">Software Development</a> |
+                    <a href="" class="uk-button foot uk-button-text">Network Competition</a>
+                </div>
+                <div class="uk-width-1-3@s uk-text-center uk-text-left@s uk-visible@s">
+                    <h5 class="uk-margin-remove-bottom">
+                        Universitas Sriwijaya
+                    </h5>
+                    <p class="uk-text-meta">
+                        Jl. Palembang - Prabumulih KM.32 Kabupaten Ogan Ilir, Sumatera Selatan
+                    </p>
+                </div>
+                <div class="uk-width-1-3@s uk-text-center uk-text-left@s">
+                    <h5>
+                        Media Sosial
+                    </h5>
+                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="youtube"></a>
+                </div>
+            </div>
+            <div class="uk-text-center">
+                
+            </div>
+        </div>
+        <div class="uk-text-center uk-padding-small uk-padding-remove-horizontal uk-margin-top" style="color: white; background-color: #111">
+            Copyright &copy; IT Lead Techphoria 2019
+        </div>
+    </footer>
+    
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/uikit.min.js"></script>
+    <script src="./js/uikit-icons.min.js"></script>
+</body>
+</html>
